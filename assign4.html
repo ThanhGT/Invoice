@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Store</title>
+	<script type="text/javascript" src="js/assign4.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/assign4.css">
+</head>
+<body>
+	<h1>My Invoice</h1>
+	<table id="receipt">
+		<tr>
+			<td>
+				Name*: 
+			</td>
+			<td>
+				<input type="text" name="name" id="name">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email*:
+			</td>
+			<td>
+				<input type="email" name="email" id="email" placeholder="email@provider.com">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Phone*:
+			</td>
+			<td>
+				<input type="text" name="phoneNum" id="phoneNum" placeholder="###-###-####">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Address*:
+			</td>
+			<td>
+				<input type="text" name="address" id="address" >
+			</td>
+		<tr>
+			<td>
+				City*: 
+			</td>
+			<td>
+				<input type="text" name="city" id="city">
+			</td>
+		<tr>
+			<td>
+				Postal Code*: 
+			</td>
+			<td>
+				<input type="text" name="postcode" id="postcode" placeholder="X#X #X#">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Province/Territory*: 
+			</td>
+			<td>
+				<select name="province" id="province">
+					<option value = "BC">British Columbia</option>
+					<option value = "AB">Alberta</option>
+					<option value = "SK">Saskatchewan</option>
+					<option value = "MB">Manitoba</option>
+					<option value = "ON">Ontario</option>
+					<option value = "QC">Quebec</option>
+					<option value = "NB">New Brunswick</option>
+					<option value = "PE">Prince Edward Island</option>
+					<option value = "NS">Nova Scotia</option>
+					<option value = "NL">Newfoundland</option>
+					<option value = "YT">Yukon</option>
+					<option value = "NT">Northwest Territories</option>
+					<option value = "NU">Nunavut</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Product 1:
+			</td>
+			<td>
+				<input type="text" name="prod1" id="prod1" class="prod">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Product 2:
+			</td>
+			<td>
+				<input type="text" name="prod2" id="prod2" class="prod">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Product 3:
+			</td>
+			<td>
+				<input type="text" name="prod3" id="prod3" class="prod">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Delivery Time:
+			</td>
+			<td>
+				<select name="dTimes" id="dTimes" required>
+					<option value = "30">1 DAY</option>
+					<option value = "25">2 DAYS</option>
+					<option value = "20">3 DAYS</option>
+					<option value = "15">4 DAYS</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="process_form();" id="submit">Place Order</button>
+				<div id="errors"></div>
+				<div id="output"></div>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
